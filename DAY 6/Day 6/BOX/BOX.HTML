@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style> {
+    margin : 0;
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color : #f0f0f0;
+    font-family : Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.big-center {
+    width: 150px;
+    height: 150px;
+    background-color: #0078D4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.small-center {
+    width: 75px;
+    height: 75px;
+    background-color: #FF5722;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.small-center.top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.small-center.left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.small-center.right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.small-center.bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="big-center">12</div>
+        <div class="small-center top">1</div>
+        <div class="small-center left">2</div>
+        <div class="small-center right">3</div>
+        <div class="small-center bottom">4</div>
+    </div>
+</body>
+</html>

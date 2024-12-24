@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 580px;
+            width: 900px;
+            border: 2px solid black;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .box {
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            position: absolute;
+            transition: transform 0.5s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for position, background, and shadow */
+        }
+
+        .five {
+            background-color: purple;
+            margin-left: 580px;
+            margin-top: 20px;
+        }
+
+        .four {
+            background-color: rgb(68, 128, 0);
+            margin-left: 580px;
+            margin-top: 380px;
+            transition: transform 0.5s ease; /* Only add transition for the fourth box */
+        }
+
+        .three {
+            background-color: rgb(120, 160, 45);
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .two {
+            background-color: rgb(192, 125, 183);
+            margin-left: 20px;
+            margin-top: 380px;
+        }
+
+        /* Hover effect for the fourth box */
+        .four:hover {
+            background-color: lightblue; /* Change background color on hover */
+            transform: translate(calc(50% - 150px), calc(50% - 100px)); /* Move the box to the center */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow for a floating effect */
+            scale: 1.1; /* Slight scaling for visual effect */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+    </div>
+</body>
+</html>
+

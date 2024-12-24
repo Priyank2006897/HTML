@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section with Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .about-section {
+            background-color: #f4f4f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .description {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to our website! Heres a quick introduction to our mission and services:</p>
+
+        <!-- Video Tag -->
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Description of the Video -->
+        <div class="description">
+            <p><b>Video Description:</b></p>
+            <p><i>This video provides an overview of our journey, highlighting our mission to deliver exceptional services.</i></p>
+            <p>We focus on <b>innovation</b>, <b>excellence</b>, and creating a meaningful impact in the lives of our customers. Watch to learn more!</p>
+        </div>
+    </div>
+
+</body>
+</html>
